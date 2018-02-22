@@ -63,16 +63,13 @@
 		823787C720278A990073AC5A /* Every.Do.Again */ = {
 			isa = PBXGroup;
 			children = (
+				823787D720278A9A0073AC5A /* Main.storyboard */,
 				823787CB20278A9A0073AC5A /* AppDelegate.h */,
 				823787CC20278A9A0073AC5A /* AppDelegate.m */,
 				823787D120278A9A0073AC5A /* MasterViewController.h */,
 				823787D220278A9A0073AC5A /* MasterViewController.m */,
 				823787D420278A9A0073AC5A /* DetailViewController.h */,
 				823787D520278A9A0073AC5A /* DetailViewController.m */,
-				823787D720278A9A0073AC5A /* Main.storyboard */,
-				823787DA20278A9A0073AC5A /* Assets.xcassets */,
-				823787DC20278A9A0073AC5A /* LaunchScreen.storyboard */,
-				823787DF20278A9A0073AC5A /* Info.plist */,
 				823787CE20278A9A0073AC5A /* Every_Do_Again.xcdatamodeld */,
 				823787C820278A990073AC5A /* Supporting Files */,
 			);
@@ -82,6 +79,9 @@
 		823787C820278A990073AC5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				823787DA20278A9A0073AC5A /* Assets.xcassets */,
+				823787DF20278A9A0073AC5A /* Info.plist */,
+				823787DC20278A9A0073AC5A /* LaunchScreen.storyboard */,
 				823787C920278A9A0073AC5A /* main.m */,
 			);
 			name = "Supporting Files";

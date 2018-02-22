@@ -14,10 +14,9 @@
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-@property (strong, nonatomic) DetailViewController *detailViewController;
-
-@property (strong, nonatomic) NSFetchedResultsController<Event *> *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) DetailViewController* detailViewController;
+@property (strong, nonatomic) NSFetchedResultsController<Todo*>* fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext* managedObjectContext;
 
 
 @end

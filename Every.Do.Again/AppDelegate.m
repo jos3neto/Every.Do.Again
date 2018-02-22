@@ -17,7 +17,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
@@ -75,13 +76,18 @@
 
 @synthesize persistentContainer = _persistentContainer;
 
-- (NSPersistentContainer *)persistentContainer {
+- (NSPersistentContainer*)persistentContainer
+{
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
-    @synchronized (self) {
-        if (_persistentContainer == nil) {
+    @synchronized (self)
+    {
+        if (_persistentContainer == nil)
+        {
             _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Every_Do_Again"];
-            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
-                if (error != nil) {
+            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription*storeDescription, NSError* error)
+            {
+                if (error != nil)
+                {
                     // Replace this implementation with code to handle the error appropriately.
                     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                     
@@ -105,10 +111,12 @@
 
 #pragma mark - Core Data Saving support
 
-- (void)saveContext {
-    NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSError *error = nil;
-    if ([context hasChanges] && ![context save:&error]) {
+- (void)saveContext
+{
+    NSManagedObjectContext* context = self.persistentContainer.viewContext;
+    NSError* error = nil;
+    if ([context hasChanges] && ![context save:&error])
+    {
         // Replace this implementation with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
